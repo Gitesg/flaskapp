@@ -6,10 +6,10 @@ app = Flask(__name__)
 @app.route('/')
 def get_name():
     # Your logic to fetch a name can go here
-    name = "John Doe"
+    return 'hello'
     
     # Returning the name in JSON format
-    return jsonify({'name': name})
+    
 
 if __name__ == '__main__':
     app.run(debug=True,port=8000)
